@@ -1,4 +1,4 @@
-const Manager = requre('../lib/Manager');
+const Manager = require('../lib/Manager');
 const manager = new Manager('Jamie', '899974', 'jmolly@gmail.com', '333');
 
 test('test if we can get the constructor values for the manager object', () => {

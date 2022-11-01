@@ -1,13 +1,13 @@
-const Employee = require('..lib/Employee');
+const Employee = require('../lib/Employee');
 const employee = new Employee('Jamie', "899974", "jmolly@gmail.com")
 
-TextDecoderStream('test if we can get the consructor values for the employee object', () => {
-    expect(employee.name).toBe('jamie');
+test('test if we can get the consructor values for the employee object', () => {
+    expect(employee.name).toBe('Jamie');
     expect(employee.id).toBe('899974');
     expect(employee.email).toBe('jmolly@gmail.com');
 });
 
-TextDecoderStream('test if we can get the name from the getName()', () => {
+test('test if we can get the name from the getName()', () => {
     expect(employee.getName()).toBe('Jamie');
 });
 
